@@ -1,0 +1,229 @@
+<view class="page">
+  <!--轮播图  -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{movies}}" wx:for-index="index" wx:key="k">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper> 
+
+    <!-- 固定屏幕顶部的搜索框 -->
+    <!--需要修改 有三个内容 1， 用户定位 2，就近商铺选择 3.搜索-->
+    <view class="page__bd displayTop">
+        <!--用户定位-->
+        <view class="header_view_bar">
+          <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <image class="weui-icon-search_in-box" src="../../dist/images/zw.png"></image>
+                    <view class="weui-search-bar__input">江北大石坝东原D7</view>
+                </view>
+            </view>
+        </view>
+        <!--周围店铺选择-->
+        <view class=" header_view_bar">
+          <view class="weui-search-bar__form" bindtap="ShowAddModel">
+            <view class="weui-search-bar__box">
+              <image class="weui-icon-search_in-box" src="../../dist/images/down.png"></image>
+              <view class="weui-search-bar__input">南坪正街店</view>
+            </view>
+          </view>
+          <!--弹出选择框-->
+            <!--遮罩层  -->
+          <view class="commodity_screen" bindtap='hideModal' wx:if="{{showModalHeaderStatus}}"></view>
+          <view class="addModel" wx:if="{{showModalHeaderStatus}}" animation="{{animationData}}">
+            <!--向上小三角-->
+            <view class="yd"></view>
+            <view class="addModel_box">
+              <view class="box_title">附近{{merchantNum}}个商家可为您配送</view>
+              <view class="weui-panel__bd">
+
+              <radio-group class="radio-group" bindchange="radioChange">
+                <label class="radio">
+                  <view class="weui-media-box weui-media-box_appmsg"> 
+                      <view class="weui-media-box__hd box_hd">南坪正街店</view>
+                      <view class="weui-media-box__bd box_desc">距您1200米，1小时内送达</view>
+                      <view class="weui-media-box__bd box_icon"><radio value="{{item.name}}"  checked="{{item.checked}}"/></view>
+                  </view>
+                  <view class="weui-media-box weui-media-box_appmsg"> 
+                      <view class="weui-media-box__hd box_hd">五小区店</view>
+                      <view class="weui-media-box__bd box_desc">距您850米，1小时内送达</view>
+                      <view class="weui-media-box__bd box_icon"><radio value="{{item.name}}"  checked="{{item.checked}}"/></view>
+                  </view>
+                </label>
+              </radio-group>
+
+              </view>
+            </view>
+          </view>
+        </view>
+        <!--搜索-->
+        <view class="weui-search-bar header_view_bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}"  bindinput="inputTyping" />
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!--分类  -->
+    <view class="weui-grids">
+      <view bindtap='goTogroup' class="weui-grid js_grid">
+        <view class="weui-grid__icon" >
+          <image src='../../dist/images/icon/icon_1.png'></image>
+        </view>
+        <view class="weui-grid__label">分类</view>
+      </view>
+      <view bindtap='goTocookBook' class="weui-grid js_grid">
+        <view class="weui-grid__icon">
+          <image src='../../dist/images/icon/icon_2.png'></image>
+        </view>
+        <view class="weui-grid__label">菜谱</view>
+      </view>
+      <view bindtap='goToshare' class="weui-grid js_grid">
+        <view class="weui-grid__icon">
+          <image src='../../dist/images/icon/icon_3.png'></image>
+        </view>
+        <view class="weui-grid__label">分享有礼</view>
+      </view>
+      <view bindtap='goToyouhui' class="weui-grid js_grid">
+        <view class="weui-grid__icon">
+          <image src='../../dist/images/icon/icon_4.png'></image>
+        </view>
+        <view class="weui-grid__label">优惠券</view>
+      </view>
+    </view>
+
+    <!-- 主体板块 -->
+    <!--  固定广告位 -->
+    <view class="box_img" bindtap='goToDailyDeals'>
+      <image src='../../dist/images/meiritejia.png'></image>
+    </view>
+    <!-- 田园时蔬 -->
+    <view class="box_section">
+      <view class="box_body_title">
+        <image src='../../dist/images/tyss.png'></image>
+        田园时蔬
+      </view>
+      <view class="box_body">
+        <view class="box_body_list"  wx:for="{{sData}}" wx:key="k" wx:for-index="i">
+          <view bindtap='gotoDetail'>
+            <view class="list_img" >
+              <image src='{{item.path}}'></image>
+            </view>
+            <view class="list_name padLeft10 lineHeight">{{item.name}}</view>
+              <!--判断 多规格 或者实际系数  -->
+            <view class="list_gz padLeft10 lineHeight">{{item.spec}}</view>
+            <view class="list_pic lineHeight">
+              <text class="colorRed">￥{{item.zprice}}</text>
+              <text class="yuanjia">￥{{item.sprice}}</text> 
+            </view>
+          </view>
+          <!--特价标签 判断有或者没有 -->
+          <view class="tejia">特价</view>
+          <view class="gogroup" bindtap='showModel'>
+            <image src='../../dist/images/icon/cart-selected.png' class="list_pic_group"></image>
+          </view>
+        </view>
+        
+        <!--<view class="box_body_list" bindtap='goTogroup'>
+          <view class="list_title">
+            更多田园时蔬
+          </view>
+          <view class="list_img">
+            <image src='../../dist/images/list_1.png'></image>
+          </view>
+          <view class="list_text_img">
+            <image src='../../dist/images/right.png'></image>
+          </view>
+        </view>-->
+      </view>
+    </view>
+    <view class="h10"></view>
+  
+  <!-- 主体板块 -->
+    <!--  固定广告位 -->
+    <view class="box_img">
+      <image src='../../dist/images/meiritejia.png'></image>
+    </view>
+    <!--禽蛋肉类  -->
+    <view class="box_section">
+      <view class="box_body_title">
+        <image src='../../dist/images/qdrl.png'></image>
+        禽蛋肉类
+      </view>
+      <view class="box_body">
+        <view class="box_body_list"  wx:for="{{rData}}" wx:key="k" wx:for-index="i">
+          <view bindtap='gotoDetail'>
+            <view class="list_img" >
+              <image src='{{item.path}}'></image>
+            </view>
+            <view class="list_name padLeft10 lineHeight">{{item.name}}</view>
+              <!--判断 多规格 或者实际系数  -->
+            <view class="list_gz padLeft10 lineHeight">{{item.spec}}</view>
+            <view class="list_pic lineHeight">
+              <text class="colorRed">￥{{item.zprice}}</text>
+              <text class="yuanjia">￥{{item.sprice}}</text> 
+            </view>
+          </view>
+          <!--特价标签 判断有或者没有 -->
+          <view class="tejia">特价</view>
+          <view class="gogroup" bindtap='showModel'>
+            <image src='../../dist/images/icon/cart-selected.png' class="list_pic_group"></image>
+          </view>
+        </view>
+        <!--<view class="box_body_list" bindtap='goTogroup'>
+          <view class="list_title">
+            更多肉类
+          </view>
+          <view class="list_img">
+            <image src='../../dist/images/r1.jpg'></image>
+          </view>
+          <view class="list_text_img">
+            <image src='../../dist/images/right.png'></image>
+          </view>
+        </view>-->
+      </view>
+    </view>
+  
+    
+
+   <!-- 隐藏的列表 -->
+    <!--遮罩层  -->
+  <view class="commodity_screen" bindtap='hideModal' wx:if="{{showModalStatus}}"></view>
+  <!--内容区域  -->
+  <view class="commodity_attr_box" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+    <view class="header">
+      <image src='../../dist/images/list_1.png'></image>
+      <view class="red">￥17</view>
+      <view class="red yuanjia">￥20</view>
+    </view>
+    <view class="desc">
+      <view class="title">选择菜品</view>
+      <view class="btn active">1斤</view>
+    </view>
+    <view class="footer">
+      <view class="weui-cells weui-cells_after-title">
+        <!-- 购买数量 -->
+        <view class="weui-cell weui-cell_switch">
+            <view class="weui-cell__ft">
+                <!-- 主容器 -->
+                <view class="stepper">
+                  <!-- 减号 -->
+                  <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                  <!-- 数值 -->
+                  <input type="number" bindchange="bindManual" value="{{num}}" />
+                  <!-- 加号 -->
+                  <text class="normal" bindtap="bindPlus">+</text>
+                </view>
+            </view>
+        </view>
+    
+      </view>
+      <!--确定 start-->
+      <view class="bottom-btn rt" bindtap="addCartConfirm">加入购物车</view>
+    </view>
+  </view>
+</view>

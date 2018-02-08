@@ -1,0 +1,23 @@
+.page__hd{
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.page__title{
+  border-bottom: 1px solid #ddd;
+  color: #ff8900;
+}
+.marTop90{
+  margin-top: 90rpx;
+}
+.errorMsg_img{
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+}

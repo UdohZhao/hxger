@@ -1,0 +1,97 @@
+page{
+  background-color: #f5f5f5;
+}
+.tejia1 image{
+  width: 100%;
+  height: 300rpx;
+  display: block;
+}
+.daily_body{
+  display: block;
+  width: 100%;
+  margin-top: 40rpx;
+
+}
+.box_body_list{
+  width: 46%;
+  position: relative;
+  float: left;
+  font-size: 14px;
+  background-color: #fff;
+  margin:20rpx 2%;
+}
+.list_img{
+  width: 100%;
+  height:300rpx;
+  margin-bottom: 20rpx;
+}
+.padLeft10{
+  padding-left: 20rpx;
+}
+.list_name{
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.colorRed{
+  font-size: 16px;
+  color: #f00; 
+  margin-right: 20rpx;
+}
+.yuanjia{
+  color: #666;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.tejia{
+  position: absolute;
+  padding: 5rpx;
+  top:10rpx;
+  left:10rpx;
+  background-color: #FE6732;
+  color: #fff;
+  border-radius: 0 5px 5px 5px;
+  opacity: .8;
+}
+.gogroup{
+  position: absolute;
+  right: 5rpx;
+  bottom:5rpx;
+  width: 60rpx;
+  height: 50rpx;
+}
+.headerlabel{
+  width: 100%;
+  height: 100rpx;
+}
+.headerlabel .left{
+  width: 45px;
+  height: 41px;
+  float: left;
+}
+.headerlabel .left image{
+  width: 45px;
+  height: 41px;
+  display: block;
+}
+.headerlabel .right{
+  width: 50px;
+  height: 48px;
+  float: right;
+  padding-right: 10rpx;
+}
+.headerlabel .right image{
+  width: 50px;
+  height: 48px;
+  display: block;
+}
+.footerImg {
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+}
+.footerImg image{
+  width: 100%;
+  height: 200rpx;
+  display: block;
+}

@@ -1,0 +1,91 @@
+.img{
+  width: 100%;
+  height: 600rpx;
+}
+
+image{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.weui_bd{
+  padding:30rpx 20rpx;
+}
+.cookStyle{
+  line-height: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.cname{
+  font-size: 20px;
+  font-weight: 600;
+}
+.cookLeftLabel{
+  display:inline-block;
+  width: 270rpx;
+  height: 70rpx;
+  vertical-align: text-bottom;
+}
+.cookLeftLabel image{
+  width: 40rpx;
+  height: 50rpx;
+  vertical-align: text-bottom;
+}
+.boder{
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.cookBody{
+  margin-top: 30rpx;
+}
+.cookTitle{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  vertical-align: text-bottom;
+}
+.cookTitle image{
+  width: 60rpx;
+  height: 80rpx;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.cookList{
+  height: 80rpx;
+  text-align: left;
+  padding:0 20rpx;
+  vertical-align: text-bottom;
+}
+.cookList text{
+  display: inline-block;
+  width: 40%;
+}
+.cookList image{
+  display: inline-block;
+  text-align: right;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: text-bottom;
+}
+.backF1{
+  background-color: #F1F1F1;
+}
+.section image{
+  display: block;
+  width: 100%;
+  height: 500rpx;
+  margin: 30rpx 0;
+}
+.section view{
+  line-height: 2;
+}
+.sec_title{
+  text-align: center;
+  color: #FF9900;
+}
+.w350{
+  width: 400rpx;
+}
+.w200{
+  width: 240rpx;
+}

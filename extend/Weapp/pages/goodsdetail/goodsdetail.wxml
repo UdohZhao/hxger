@@ -1,0 +1,166 @@
+<view class="page">
+  <!--轮播图  -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{movies}}" wx:for-index="index" wx:key="k">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper> 
+  <view class="goods_body">
+    <view class="goods_name goodsStyle">黄豆芽</view>
+    <view class="goods_pic goodsStyle">
+      <view class="goods_num">销量：3554</view>
+      <view class="goods_pic_num">￥0.9 </view>
+      <view class="goods_pic_num_origin">￥2</view>
+    </view>
+    <!--  特价 判断 -->
+    <view class="teJia goodsStyle">
+      <view class="tejiaStyle">
+        <text class="teJia_red">特价</text>
+        每天限购50份，每人限购1份，超过部分恢复原价
+        </view>
+    </view>
+    <view class="goodsStyle">
+      <view class="guigeStyle">
+      规格:<text class="btn active">3两</text>
+           <text class="btn">7两</text>
+      </view>
+    </view>
+    
+  </view>
+
+  <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                  <!-- 相关食谱  -->
+                  <view class="recipe_body">
+                    <view class="page__bd">
+                        <view class="weui-panel weui-panel_access">
+                            <view class="weui-panel__bd">
+                                <navigator url="/pages/cookbookDetail/cookbookDetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                                        <image class="weui-media-box__thumb" src="../../dist/images/s1.jpg" />
+                                    </view>
+                                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                                        <view class="weui-media-box__title">宝宝蔬菜搜肉粥</view>
+                                        <view class="weui-media-box__desc">大米、糯米、胡萝卜
+                                        </view>
+                                        <view class="weui-media-box__desc">
+                                          <view class="eye">
+                                            <image src='../../dist/images/icon/eye.png'></image>
+                                            221
+                                          </view>
+                                          <view class="star">
+                                            <image src='../../dist/images/icon/star.png'></image>
+                                            10
+                                          </view>
+                                        </view>
+                                    </view>
+                                </navigator>
+                                <navigator url="/pages/cookbookDetail/cookbookDetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                                        <image class="weui-media-box__thumb" src="../../dist/images/s1.jpg" />
+                                    </view>
+                                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                                        <view class="weui-media-box__title">青菜豆腐汤</view>
+                                        <view class="weui-media-box__desc">青菜、豆腐、虾皮、盐
+                                      </view>
+                                        <view class="weui-media-box__desc">
+                                          <view class="eye">
+                                            <image src='../../dist/images/icon/eye.png'></image>
+                                            221
+                                          </view>
+                                          <view class="star">
+                                            <image src='../../dist/images/icon/star.png'></image>
+                                            10
+                                          </view>
+                                        </view>
+                                    </view>
+                                </navigator>
+                            </view>
+                            <view class="weui-panel__ft">
+                                <view class="weui-cell weui-cell_access weui-cell_link" bindtap='goToCookbook'>
+                                    <view class="weui-cell__bd">查看更多相关菜谱</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                  </view>
+                    <!-- 为您推荐 -->
+                    <view class="recipe_body">
+                      <view class="recipe_title">
+                          <text>----·</text> 为您推荐  <text>·----</text>
+                      </view>
+                      <view class="page__bd">
+                        <view class="page_bd_list">
+                          <image src='../../dist/images/g1.jpg'></image>
+                          <view class="page_bdStyle">上海青菜</view>
+                          <view class="page_bdStyle red">7两</view>
+                          <view class="page_bdStyle">￥2.4</view>
+                        </view>
+                        <view class="page_bd_list">
+                          <image src='../../dist/images/g2.jpg'></image>
+                          <view class="page_bdStyle">上海青菜</view>
+                          <!--判断 特价 或者 固定价格  -->
+                          <view class="page_bdStyle red">7两</view>
+                          <view class="page_bdStyle">￥2.4</view>
+                        </view>
+                        <view class="page_bd_list">
+                          <image src='../../dist/images/g3.jpg'></image>
+                          <view class="page_bdStyle">上海青菜</view>
+                          <view class="page_bdStyle red">7两</view>
+                          <view class="page_bdStyle">￥2.4</view>
+                        </view>
+                        <view class="clear"></view> 
+                      </view>
+                    </view>
+                </view>
+                <view class="weui-tab__content Img" hidden="{{activeIndex != 1}}">
+                  <image  src="../../dist/images/s1.jpg" />
+                  <image  src="../../dist/images/s2.jpg" />
+                  <image  src="../../dist/images/s3.jpg" />
+                  
+                  
+                </view>
+            </view>
+        </view>
+
+  
+
+   <view class="footer_mess">
+    ----· 加载到底了 ·----
+  </view> 
+
+  <!--固定底部 加入购物车  -->
+  <view class="group">
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 购买数量 -->
+      <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__ft">
+              <!-- 主容器 -->
+              <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" bindchange="bindManual" value="{{num}}" />
+                <!-- 加号 -->
+                <text class="normal" bindtap="bindPlus">+</text>
+              </view>
+          </view>
+      </view>
+    
+    </view>
+    <!--确定 start-->
+    <view class="bottom-btn rt" bindtap="addCartConfirm">加入购物车</view>
+  </view>
+</view>

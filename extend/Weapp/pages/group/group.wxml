@@ -1,0 +1,65 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+                <view class="weui-search-bar__form">
+                    <view class="weui-search-bar__box">
+                        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                            <icon type="clear" size="14"></icon>
+                        </view>
+                    </view>
+                    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                        <icon class="weui-icon-search" type="search" size="14"></icon>
+                        <view class="weui-search-bar__text">搜索</view>
+                    </label>
+                </view>
+                <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+    </view> 
+    <!--主盒子-->  
+    <view class="container">  
+        <!--左侧栏-->  
+        <view class="nav_left">  
+            <block wx:for="{{navLeftItems}}" wx:key="k">  
+            <!--当前项的id等于item项的id，那个就是当前状态-->  
+            <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->  
+            <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.title}}</view>  
+            </block>  
+        </view>  
+        <!--右侧栏-->  
+        <view class="nav_right">  
+            <!--如果有数据，才遍历项-->  
+            <view class="sort">
+                <block wx:for="{{sort}}" wx:key="k">
+                <view bindtap="bindSort">
+                    <view class="header_view_bar {{sortActive == item.id ? 'header_view_bar_hover':''}}" data-index="{{index}}" data-id="{{item.id}}"  >{{item.name}}</view>
+                </view>
+                </block>
+            </view>
+            <view wx:if="{{navRightItems}}" class="weui-panel weui-panel_access">  
+                <block wx:for="{{navRightItems}}" wx:key="k">  
+                    <view class="nav_right_items {{demoActive == item.id? 'demoActive':''}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="bindtapDemo">{{item.name}}</view>  
+                </block>  
+            </view>  
+            <view class="weui-panel weui-panel_access">
+                <view class="weui-panel__bd">
+                    <block wx:for="{{dcData}}" wx:key="k">
+                    <view  class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetail">
+                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                            <image class="weui-media-box__thumb" src="{{item.path}}" />
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                            <view class="weui-media-box__title">{{item.name}}</view>
+                            <view class="weui-media-box__desc">￥{{item.price}}
+                                <text class="addMore">+</text>
+                            </view>
+                        </view>
+                    </view>
+                    </block>
+                </view>
+            </view>
+            
+        </view>  
+    </view> 
+</view>

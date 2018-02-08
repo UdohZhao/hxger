@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="page__hd">
+        <view class="page__title">退换货说明</view>
+  </view>
+  <view class=" marTop90 pad15">
+      <view class="title">
+        <image src='../../dist/images/return_1.png'></image>
+        当面验收
+      </view>
+      <view class="desc">花样菜场支持当面验收，您有权处理不满意的产品</view>
+      <view class="h30"></view>
+      <view class="title">
+        <image src='../../dist/images/return_2.png'></image>
+        24小时承诺
+      </view>
+      <view class="desc">您收货24小时内发现任何质量问题，可致电客服申请退换 货， 
+      我们承诺做出相应处理。</view>
+      <view class="h30"></view>
+      <view class="title">
+        <image src='../../dist/images/return_3.png'></image>
+        退货保障
+      </view>
+      <view class="desc">退换货发生时，由于花样菜场原因或菜品质量问题造成的 退换货，客服审核后将与您联系，为您处理。如因为您个 人原因造成的质量原因的菜品，我们将不接受您的退换请 求。为保障你的权益，请仔细阅读以下内容：</view>
+      <view class="desc">1、请您签收时与配送人员当面核对菜品的种类，数量， 规格等是否正确。确认无误后再进行签收。建议您尽量不 要委托他人代为签收；如由他人代为签收菜品而没有在配 送人员在场的情况下验货，则视为您所订购的菜品无任何 问题；</view>
+      <view class="desc">2、生鲜肉类商品质量下降较快，影响二次销售，因用户 下单造成错送或多送，不享受退换货服务。</view>
+      <view class="desc">3、菜品根据质量不同，价格不同；若下单时选择较低价 格的商品，以高一级质量标准验收的，不享受退换货服务 。如：下单时选择杂排但验收时以仔排标准验收的，将不 享受退换货服务。</view>
+      <view class="desc">4、如有退换货要求请一定保持原样， 对于处理过的菜品 将不享受退换货服务。</view>
+      <view class="desc">5、如有退货要求的，请于配送时间前40分钟进行申请， 如果用户没有及时申请退款，将不享受退货服务。</view>
+      <view class="desc">6、退换货要求请于签字验收前提出，过期将影响菜品回 收及二次销售，不享受退换货服务。</view>
+      <view class="desc">7、图片及信息仅供参照，菜品将以实物为准。因拍摄灯 光及不同显示器色差等问题可能造成菜品图片与实物有一 定色差，不属于质量问题。</view>
+      <view class="h30"></view>
+  </view>
+</view>

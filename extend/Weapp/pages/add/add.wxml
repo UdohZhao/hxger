@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page__hd">
+        <view class="page__title">我的地址 <text class="Address" bindtap='newAdd'>+</text></view>
+    </view>
+
+    <!--遮罩层  -->
+  <view class="commodity_screen" bindtap='hideModal' wx:if="{{showModalStatus}}"></view>
+  <!--内容区域  -->
+  <view class="commodity_attr_box" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+    
+  </view>
+</view>

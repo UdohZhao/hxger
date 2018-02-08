@@ -1,0 +1,51 @@
+<view class="page">
+  <view class="page__hd">
+        <view class="page__title">我的食谱</view>
+  </view>
+  <view class="page__bd marTop90">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <navigator url="/pages/cookbookDetail/cookbookDetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../dist/images/1.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">宝宝蔬菜搜肉粥</view>
+                        <view class="weui-media-box__desc">大米、糯米、胡萝卜
+                        </view>
+                        <view class="weui-media-box__desc">
+                          <view class="eye">
+                            <image src='../../dist/images/icon/eye.png'></image>
+                            221
+                          </view>
+                          <view class="star">
+                            <image src='../../dist/images/icon/star.png'></image>
+                            10
+                          </view>
+                        </view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../dist/images/1.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">青菜豆腐汤</view>
+                        <view class="weui-media-box__desc">青菜、豆腐、虾皮、盐
+                      </view>
+                        <view class="weui-media-box__desc">
+                          <view class="eye">
+                            <image src='../../dist/images/icon/eye.png'></image>
+                            221
+                          </view>
+                          <view class="star">
+                            <image src='../../dist/images/icon/star.png'></image>
+                            10
+                          </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

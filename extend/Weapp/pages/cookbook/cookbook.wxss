@@ -1,0 +1,84 @@
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding:20rpx 0;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #FE6732;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+  z-index: 2;
+  background-color: #fff;
+}
+.page__bd{
+  margin-top: 100rpx;
+}
+.weui-media-box__desc{
+  height: 40rpx;
+  width: 100%;
+  overflow: hidden;
+  margin: 10rpx 0; 
+}
+.eye,.star{
+  width: 200rpx;
+  vertical-align: text-bottom;
+  text-align: center;
+  float: right;
+}
+.eye image,.star image{
+  width: 34rpx;
+  height: 46rpx;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 10rpx;
+}
+.search{
+  float: right;
+  padding-right: 20px;
+  line-height: 1.5;
+}
+.scrollBox{
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  white-space: nowrap;
+  padding: 0 15px;
+}
+.scrollBox_list{
+  width: 25%;
+  margin-right: 3%;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+}
+.weui-media-box{
+  padding: 0;
+}
+.media_box_img{
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+.media_box_img_span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:rgba(15, 15, 26, .8) ;
+  color: #fff;
+}
+.cname{
+  display: inline-block;
+  padding-left: 10px;
+}
+.media_box_mess{
+  padding: 15px;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 1px;
+}

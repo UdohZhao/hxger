@@ -1,0 +1,70 @@
+<view class="page">
+  <!--头像  -->
+  <view class="header">
+    <image src='../../dist/images/backgroud.png'></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <view class="img_desc">
+          <image src='{{userInfo.avatarUrl}}'></image>
+          <view class="Username">{{userInfo.nickName}}</view>
+        </view>
+    </block>
+  </view>
+  <!--我的订单  -->
+    <view class="page__hd">
+        <view class="page__title">我的订单</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="/pages/indent/indent" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{item.url}}" />
+                    <view class="weui-grid__label">{{item.name}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+    <!--分割线   -->
+    <view class="fg"></view>
+    <!--其他服务项目  -->
+    <view class="page__bd">
+        <view class="weui-grids">
+                <navigator url="/pages/youhui/youhui" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_5.png" />
+                    <view class="weui-grid__label">优惠券</view>
+                </navigator>
+                <navigator url="/pages/myRecipe/myRecipe" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_6.png" />
+                    <view class="weui-grid__label">我的食谱</view>
+                </navigator>
+                <navigator url="/pages/add/add" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_7.png" />
+                    <view class="weui-grid__label">地址管理</view>
+                </navigator>
+                <view class="weui-grid" hover-class="weui-grid_active">
+                  <image class="weui-grid__icon" src="../../dist/images/me_8.png" />
+                  <view class="weui-grid__label">
+                    <button open-type="contact" session-from="weapp" class="weappStyle">在线客服</button>
+                  </view>
+                 
+                </view>
+
+                <view class="weui-grid" hover-class="weui-grid_active" bindtap='CallPhone'>
+                    <image class="weui-grid__icon" src="../../dist/images/me_9.png" />
+                    <view class="weui-grid__label">服务热线</view>
+                </view>
+                <navigator url="/pages/feedback/feedback" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_10.png" />
+                    <view class="weui-grid__label">意见反馈</view>
+                </navigator>
+                <navigator url="/pages/returnMess/returnMess" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_11.png" />
+                    <view class="weui-grid__label">退还货说明</view>
+                </navigator>
+                <navigator url="/pages/about/about" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/images/me_12.png" />
+                    <view class="weui-grid__label">关于我们</view>
+                </navigator>
+        </view>
+    </view>
+</view>

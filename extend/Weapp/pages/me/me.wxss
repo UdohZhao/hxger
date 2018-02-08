@@ -1,0 +1,55 @@
+/* pages/.wxss */
+.header{
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+}
+.header image{
+  display: block;
+  height: 400rpx;
+  width: 100%;
+}
+.img_desc{
+  width: 200rpx;
+  height: 200rpx;
+  line-height: 130rpx;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+}
+.img_desc image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-left:20rpx; 
+  border-radius: 50%;
+}
+
+.page__title{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left:20rpx; 
+}
+.weui-grid{
+  width: 25%;
+  border:0;
+}
+.fg{
+  display:block;
+  clear: both;
+  height: 40rpx;
+  content: '';
+  width: 100%;
+  background-color: #eee;
+}
+.weappStyle{
+  padding: 0;
+  border: 1px solid transparent;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.7;
+}

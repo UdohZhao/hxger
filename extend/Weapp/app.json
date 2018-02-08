@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/group/group",
+    "pages/cart/cart",
+    "pages/me/me",
+    "pages/dailyDeals/dailyDeals",
+    "pages/goodsdetail/goodsdetail",
+    "pages/cookbook/cookbook",
+    "pages/cookbookDetail/cookbookDetail",
+    "pages/indent/indent",
+    "pages/youhui/youhui",
+    "pages/myRecipe/myRecipe",
+    "pages/add/add",
+    "pages/feedback/feedback",
+    "pages/returnMess/returnMess",
+    "pages/about/about",
+    "pages/newAdd/newAdd",
+    "pages/order/order",
+    "pages/share/share"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "人来渔往·生鲜汇",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#04BE02",
+    "backgroundColor": "#f7f7fa",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "dist/images/icon/main-default.png",
+        "selectedIconPath": "dist/images/icon/main-selected.png"
+      },
+      {
+        "pagePath": "pages/group/group",
+        "text": "分类",
+        "iconPath": "dist/images/icon/group-default.png",
+        "selectedIconPath": "dist/images/icon/group-selected.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "dist/images/icon/cart-default.png",
+        "selectedIconPath": "dist/images/icon/cart-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "dist/images/icon/me-default.png",
+        "selectedIconPath": "dist/images/icon/me-selected.png"
+      }
+    ]
+  }
+}

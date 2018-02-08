@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="container">
+        <view class="weui-form-preview" wx:if="{{data}}">
+                    </view>
+                    <view wx:else>
+                        <view class="errorMsg">
+                            <view class="errorMsg_desc">生鲜汇，汇聚各种新鲜海鲜，赶快分享给朋友吧！</view>
+                            <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="gotoIndex">先去逛逛</button>
+                        </view>
+                    </view>
+    </view>
+</view>

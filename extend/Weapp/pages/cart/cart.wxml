@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="container">
+        <view class="weui-form-preview" wx:if="{{data}}"></view>
+         <view wx:else>
+            <view class="errorMsg">
+                <view class="errorMsg_img"><image src="../../dist/images/carMsg.png"/></view>
+                <view class="errorMsg_desc">不剁手的日子好空虚</view>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="gotoIndex">去首页看看</button>
+            </view>
+         </view>
+    </view>
+</view>

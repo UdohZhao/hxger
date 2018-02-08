@@ -1,0 +1,15 @@
+<view class="page ">
+  <view class="page__hd">
+        <view class="page__title">意见反馈</view>
+    </view>
+  <view class="page_hd marTop90 backDDD">
+         <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="如果你有什么好的建议或者想法，可以发送给我们，会有意想不到的惊喜哟！" style="height: 4.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+  </view>
+</view>

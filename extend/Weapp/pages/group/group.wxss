@@ -1,0 +1,130 @@
+page{  
+  background: #f5f5f5;  
+}  
+/*总体主盒子*/  
+.container {  
+  position: relative;  
+  width: 100%;  
+  height: 100%;  
+  background-color: #fff;  
+  color: #939393;  
+  display: block;
+  padding: 0;
+}  
+  
+/*左侧栏主盒子*/  
+.nav_left{  
+  /*设置行内块级元素（没使用定位）*/  
+  display: inline-block;  
+  width: 25%;  
+  height: 100%;  
+  /*主盒子设置背景色为灰色*/  
+  background: #f5f5f5;  
+  text-align: center;  
+}  
+/*左侧栏list的item*/  
+.nav_left .nav_left_items{  
+  /*每个高30px*/  
+  height: 30px;  
+  /*垂直居中*/  
+  line-height: 30px;  
+  /*再设上下padding增加高度，总高42px*/  
+  padding: 6px 0;  
+  /*只设下边线*/  
+  border-bottom: 1px solid #dedede;  
+  /*文字14px*/  
+  font-size: 14px;  
+}  
+/*左侧栏list的item被选中时*/  
+.nav_left .nav_left_items.active{  
+  /*背景色变成白色*/  
+  background: #fff;  
+}  
+  
+/*右侧栏主盒子*/  
+.nav_right{  
+  /*右侧盒子使用了绝对定位*/  
+  position: absolute;  
+  top: 0;  
+  right: 0;  
+  flex: 1;  
+  /*宽度75%，高度占满，并使用百分比布局*/  
+  width: 75%;  
+  height: 100%;  
+  box-sizing: border-box;  
+  background: #fff;  
+}  
+/*右侧栏list的item*/  
+ .nav_right_items{  
+  /*浮动向左*/  
+  float: left;  
+  font-size: 14px;
+  width: 28%;  
+  height: 30px;
+  line-height: 30px;  
+  text-align: center;
+  border: 0.5px solid #ddd; 
+  margin-left: 10px;
+  margin-bottom: 10px;
+}  
+.demoActive{
+  color: #ff8900;
+  border: 0.5px solid #ff8900;
+}
+.weui-panel::before{
+  border: 0;
+}
+.weui-media-box__title{
+  font-size: 16px;
+}
+.weui-media-box__desc{
+  color: #ff8900;
+}
+.weui-media-box{
+  padding:10px;
+}
+.weui-media-box__hd_in-appmsg{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.addMore{
+  float: right;
+  padding: 3px 5px;
+  border:0.5px solid #ff8900;
+  color: #fff;
+  background-color: #ff8900;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sort{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 0.5px solid #ddd;
+}
+.header_view_bar{
+  width: 33%;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+}
+.header_view_bar_hover{
+  color: #ff8900;
+}
+
+
+

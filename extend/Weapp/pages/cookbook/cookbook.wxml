@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="header">菜谱
+    <view class="search"><icon  type="search" size="20"></icon></view>
+  </view>
+  <view class="page__bd">
+
+        <scroll-view scroll-x class="scrollBox">
+            <view class="scrollBox_list">每日晚餐</view>
+            <view class="scrollBox_list">大雪暖身菜</view>
+            <view class="scrollBox_list">健康清蒸</view>
+            <view class="scrollBox_list">快手炒饭</view>
+            <view class="scrollBox_list">美味早餐</view>
+            
+        </scroll-view>
+        <view class="weui-panel weui-panel_access">
+            <block wx:for="{{cookbook}}" wx:key="k">
+                <view class="weui-panel__bd">
+                    <view  class="weui-media-box" hover-class="weui-cell_active" bindtap="gotocookbookDetail" data-id="{{item.id}}">
+                        <view class="media_box_img">
+                            <image class="weui-media-box__thumb" src="{{item.path}}" />
+                            <view class="media_box_img_span">
+                                <view class="cname">{{item.cname}}</view>
+                                <view class="eye">
+                                <image src='../../dist/images/icon/eye.png'></image>
+                                {{item.eye}}
+                            </view>
+                            <view class="star">
+                                <image src='../../dist/images/icon/star.png'></image>
+                                {{item.star}}
+                              
+                            </view>
+                            </view>
+                        </view>
+                        <view class="media_box_mess">{{item.desc}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

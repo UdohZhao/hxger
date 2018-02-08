@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">新增收货人信息</view>
+  </view>
+  <view class="page__bd marTop150">
+   <form xmlns:wx="#">
+      <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">收货人:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入收货人姓名"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入手机号码" />
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn">获取验证码</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">详细地址</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入详细地址" />
+                </view>
+              
+            </view>
+            <view class="page__bd page__bd_spacing marTop30">
+                <button class="weui-btn" type="primary">确 定</button>
+            </view>
+      </view>
+   </form>
+   </view>
+</view>

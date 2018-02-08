@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="page__hd">
+        <view class="page__title">关于我们</view>
+  </view>
+  <view class="page_bd marTop90">
+      <view class="aboutImg">
+        <image src='../../dist/images/about.png'></image>
+      </view>
+  </view>
+  <view class="page_bd_text">
+    <view class="desc aboutImg">
+        <view>新鲜——所有菜品，菜场直供</view>
+        <view>平价——菜场同价，优惠可抵</view>
+        <view>便捷——手机点点，送菜上门</view>
+        <view>速达——预约时间，准时送达</view>
+        <view>多样——品类齐全，任意选择</view> 
+    </view>
+  </view>
+  <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator class="weui-footer__link">重庆存己科技</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2017-2018 getcunji.com</view>
+        </view>
+</view>

@@ -1,0 +1,58 @@
+<view class="page marTop30">
+  <!-- 用户信息 -->
+    <view class="weui-cells weui-cells_after-title ">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">提货人</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入提货人姓名" />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">手机号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入提货人手机号" />
+        </view>
+        
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">提货点</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="提货地点" />
+        </view>
+      </view>
+    </view>
+  <!-- 商品信息 -->
+  <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../dist/images/list_1.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">白菜</view>
+                        <view class="weui-media-box__desc">购买数量:2</view>
+                        <view class="weui-media-box__desc">实付款:￥20</view>
+                    </view>
+                </navigator>
+            </view>
+        </view> 
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="给买家留言" style="height: 4.3em" />
+                </view>
+            </view>
+        </view>
+    </view>
+  <view class="footerMoney">
+    <view class="left">应付金额:￥20</view>
+    <view class="right" bindtap='pay'>立即购买</view>
+  </view>
+</view>

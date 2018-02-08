@@ -1,0 +1,101 @@
+<view class="page">
+  <view class="img">
+    <image src='../../dist/images/cookDetail_1.png'></image>
+  </view>
+  <view class="weui_bd">
+    <view class="cookStyle cname">蛤蜊炖蛋</view>
+    <view class="cookStyle">
+      <view class="cookLeftLabel">
+        <image src='../../dist/images/cook_2.png'></image>
+        684浏览
+      </view>
+      <view class="cookLeftLabel">
+        <image src='../../dist/images/cook_3.png'></image>
+        40收藏
+      </view>
+    </view>
+    <view class="cookStyle">变着花样吃鸡蛋羹，这回加点蛤蜊，鲜的不要不要的。</view>
+    <view class="cookStyle boder">
+      <view class="cookLeftLabel w350">
+        <image src='../../dist/images/cook_4.png'></image>
+        时间：10分钟左右
+      </view>
+      <view class="cookLeftLabel w200">
+        <image src='../../dist/images/cook_1.png'></image>
+        难度:初级
+      </view>
+    </view> 
+  </view>
+  <!--食材清单  -->
+  <view class="weui_bd  cookBody">
+      <view class="cookTitle">
+        <image src='../../dist/images/cookBody_1.png'></image>
+        食材清单
+      </view>
+      <!--便利体  -->
+      <view >
+        <view class="cookList backF1">
+          <text>蛤蜊</text>
+          <text>10个左右</text>
+          <image src='../../dist/images/icon/cart-selected.png'></image>
+        </view>
+        <view class="cookList">
+          <text>蛤蜊</text>
+          <text>10个左右</text>
+          <image src='../../dist/images/icon/cart-selected.png'></image>
+        </view>
+        <view class="cookList backF1">
+          <text>蛤蜊</text>
+          <text>10个左右</text>
+          <image src='../../dist/images/icon/cart-selected.png'></image>
+        </view>
+        <view class="cookList">
+          <text>蛤蜊</text>
+          <text>10个左右</text>
+          <image src='../../dist/images/icon/cart-selected.png'></image>
+        </view>
+      </view>
+  </view>
+  <!--做法  -->
+  <view class="weui_bd  cookBody">
+      <view class="cookTitle">
+        <image src='../../dist/images/cookBody_2.png'></image>
+        做法
+      </view>
+      <!--做法详情 -->
+      <view class="section">
+          <view>蒸蛋也可以变着花样来，加蛤蜊、加牛奶、加虾仁等等。</view>
+          <view>今天先来加蛤蜊的，比加虾仁的还要鲜哦！</view>
+          <image src='../../dist/images/cookDetail_1.png'></image>
+          <view class="sec_title">~Step1~</view>
+          <image src='../../dist/images/cookDetail_2.png'></image>
+          <view>锅里放水，加姜丝烧开，放洗好的蛤蜊。煮至开壳，捞出，用清水冲干净。煮蛤蜊的水不要
+          倒掉哦，把上面漂的一层水沫撇除，一会用。</view>
+          <view class="sec_title">~Step2~</view>
+          <image src='../../dist/images/cookDetail_3.png'></image>
+          <view>打两到三个鸡蛋，搅拌匀。过筛就更好了。</view>
+          <view class="sec_title">~Step3~</view>
+          <image src='../../dist/images/cookDetail_4.png'></image>
+          <view>趁着锅里煮蛤蜊的水没有凉在半温状态，往蛋液里加两倍的量。然后在加一丢丢的盐
+          ，搅化。</view>
+          <view class="sec_title">~Step4~</view>
+          <image src='../../dist/images/cookDetail_5.png'></image>
+          <view>准备一个漂亮的浅盘子，蛤蜊摆好，倒蛋液，水开了上锅蒸熟。</view>
+           <view class="sec_title">~Step5~</view>
+          <image src='../../dist/images/cookDetail_6.png'></image>
+          <view>盖上一个干净无水的盘子/保鲜膜，可以避免蜂窝眼哦。水开后蒸6分钟左右。</view>
+      </view>
+      <view class="weui_bd  cookBody">
+      <view class="cookTitle">
+        <image src='../../dist/images/cookBody_3.png'></image>
+          小贴士
+      </view>
+      <!--便利体  -->
+      <view class="section">
+        <view>1、注意把握好水和蛋的比例，水是蛋的1.5至2倍，个人感觉2倍最好 </view>
+        <view>2、蒸蛋之前，上面要盖盘子或保鲜膜，防止蜂窝孔 </view>
+        <view>3、宝宝吃蛤蜊的时候妈妈要把蛤蜊壳去掉，以免伤到宝宝</view>
+      </view>
+  </view>
+  </view>
+</view>
