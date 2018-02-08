@@ -7,7 +7,7 @@
             <view class="weui-panel__bd">
                 <navigator url="/pages/cookbookDetail/cookbookDetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../dist/images/1.png" />
+                        <image class="weui-media-box__thumb" src="../../dist/images/1.jpg" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">宝宝蔬菜搜肉粥</view>
@@ -27,7 +27,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../dist/images/1.png" />
+                        <image class="weui-media-box__thumb" src="../../dist/images/1.jpg" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">青菜豆腐汤</view>
